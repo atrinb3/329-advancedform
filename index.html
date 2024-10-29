@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form test</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <nav>
+            <div class="navBar">
+                <a class="navItem" href="index.html">Home</a>
+                <a class="navItem" href="about.html">About</a>
+                <a class="navItem" href="about.html">Projects</a>
+                <a class="navItem" href="contact.html">Contact</a>
+                <a class="navItem" href="resume.html">Resume</a>
+            </div>
+        </nav>
+        </header>
+        <div class="mainContent">
+            <h2>Give us your personal information</h2>
+            <p>We definitely won't do anything nefarious with it!</p>
+            <form  action="/register" method="post">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" maxlength="120" required>
+                </p>
+                <p>
+                    <label for="name">Password:</label>
+                    <input type="password" id="pwd" name="pwd" maxlength="30" required>
+                </p>
+                <p>
+                    <label for="mail">Address:</label>
+                    <input type="text" id="mail" name="user_address" maxlength="60" required>
+                </p>
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="user_phone" maxlength="11" required>
+                </p>
+                <p>
+                    <label class="header">Photo:</label>
+                    <input id="image" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+                    *Maximum size 512x512 pixels
+                </p>
+                <p>
+                    Gender:
+                    <input type="radio" name="gender" id="gender1" value="male" required/>
+                    <label for="gender1">Male</label>
+                    <input type="radio" name="gender" id="gender2" value="female" />
+                    <label for="gender2">Female</label>
+                    <input type="radio" name="gender" id="gender3" value="nonbinary" />
+                    <label for="gender3">Nonbinary</label>
+                    <input type="radio" name="gender" id="gender4" value="unspecified" />
+                    <label for="gender4">Prefer not to say</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="noti_1" name="receiveemails" value="emails" />
+                    <label for="taste_1">I would like to receive important notifications/updates</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="noti_2" name="selldata" value="data" />
+                    <label for="taste_2">I would like my data to be sold to advertising agencies</label>
+                </p>
+                <p class="button">
+                    <button type="submit">Register</button>
+                </p>                  
+              </form>              
+        </div>
+    </div>
+    <footer>
+        <p>Andrew Tringali 2024</p>
+    </footer>
+    </body>
+</html>
